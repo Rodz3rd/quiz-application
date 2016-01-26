@@ -1,0 +1,26 @@
+#wrapper {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#header, #content {
+	width: 100%;
+	padding: 2%;
+
+	float: left;
+}
+
+#header div {
+	float: left;
+}
+
+#header > .left {
+	width: 93%;
+}
+#header > .right {
+	width: 7%;
+}
+#header > .right a {
+	font-size: 1vw;
+}
