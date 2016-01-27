@@ -1,0 +1,15 @@
+@import "style.css";
+
+#save {
+	padding: 0 1em;
+}
+
+#users-score {
+	width: 100%;
+}
+
+#users-score > thead > tr > th,
+#users-score > tbody > tr > td {
+	width: 33.33%;
+	text-align: center;
+}
