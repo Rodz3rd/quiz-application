@@ -4,7 +4,7 @@
 	<title>Quiz Application | Login</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
-	<!-- JQuery UI plugins -->
+	<!-- JQuery UI plugin-->
 	<link rel="stylesheet" type="text/css" href="jquery-ui-themes-1.11.4/themes/sunny/jquery-ui.min.css" />
 
 	<link rel="stylesheet" type="text/css" href="assets/css/jquery-custom.css" />
@@ -16,29 +16,45 @@
 	<div class="ui-widget ui-widget-content ui-corner-all">
 		<h2 class="ui-widget-header">Login</h2>
 		<div class="ui-widget-content">
+		<form>
 			<table cellspacing="10" id="table-login">
 				<tr>
 					<td><label for="username">Username</label></td>
-					<td><input type="text" name="username" id="username" /></td>
+					<td><input type="text" name="username" id="username" required /></td>
 				</tr>
 				<tr>
 					<td><label for="password">Password</label></td>
-					<td><input type="text" name="password" id="password" /></td>
+					<td><input type="text" name="password" id="password" required /></td>
 				</tr>
 				<tr>
 					<td><button id="jquery-btn" class="ui-state-default">Login</button></td>
 				</tr>
 			</table>
+		</form>
 		</div>
 	</div>
 </div>
 
 <!-- JQuery -->
 <script type="text/javascript" src="assets/js/jquery-2.2.0.min.js"></script>
+<!-- JQuery UI plugin -->
 <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<!-- JQuery Validate plugin -->
+<script type="text/javascript" src="jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script type="text/javascript">
+$('form').validate({
+	invalidHandler: function (event, validator) {
+		var errors = validator.numberOfInvalids();
+		if ( errors ) {
+			$('#wrapper > div').effect("shake", 500);
+		} else {
+			console.log(":)");
+		}
+	}
+});
+</script>
 
 <script type="text/javascript">
-// $('#jquery-btn').button();
 </script>
 </body>
 </html>
