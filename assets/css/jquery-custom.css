@@ -7,7 +7,8 @@
 .ui-widget-content h2 {
 	padding: 1em;
 }
-.ui-widget-content p {
+.ui-widget-content p,
+.ui-widget-content div {
 	font-size: small;
 	padding: 1em;
 }
