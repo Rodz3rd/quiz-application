@@ -1,11 +1,11 @@
 #wrapper {
-	width: 50%;
+	width: 80%;
 	margin: 0 auto;
 	margin-top: 20px;
 }
 
 #header, #content {
-	width: 100%;
+	width: 96%;
 	padding: 2%;
 
 	float: left;

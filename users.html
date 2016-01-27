@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Admin</title>
+	<title>Quiz Application</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
 
-	<link rel="stylesheet" type="text/css" href="jquery-ui-themes-1.11.4/themes/black-tie/theme.css" />
+	<!-- UI plugins -->
 	<link rel="stylesheet" type="text/css" href="jquery-ui-themes-1.11.4/themes/black-tie/jquery-ui.min.css" />
-
+	
 	<link rel="stylesheet" type="text/css" href="assets/css/jquery-custom.css">
-
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/users.css" />
 </head>
 <body>
 
@@ -48,6 +47,11 @@
 
 <script type="text/javascript" src="assets/js/jquery-button-vertical.js"></script>
 
-<script type="text/javascript" src="assets/js/jquery-ui-initialize.js"></script>
+<!-- initialize -->
+<script type="text/javascript">
+$( function () {
+	$('#radio').buttonsetv();
+});
+</script>
 </body>
 </html>

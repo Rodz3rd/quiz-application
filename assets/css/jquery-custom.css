@@ -1,15 +1,29 @@
+/*/* default font-size is too large, that's why I modified it */
+#wrapper {
+	font-size: .8em;
+}
+
+/* ui-widget customize */
 .ui-widget-content h2 {
 	padding: 1em;
 }
-
 .ui-widget-content p {
 	font-size: small;
 	padding: 1em;
 }
-
-.ui-widget-header span {
+.ui-widget-header > span {
 	font-size: .6em;
 	float: right;
+}
+
+/* set button to 100% width */
+.ui-buttonset {
+	margin-right: .15em;
+}
+
+/* datepicker turn to smaller than default size */
+.ui-datepicker {
+	font-size: 1em;
 }
 
 @media screen and (min-width: 1200px) {
@@ -34,4 +48,4 @@
 	.ui-widget-content h2 {
 		font-size: x-small;
 	}
-}
+}*/
