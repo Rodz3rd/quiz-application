@@ -16,11 +16,14 @@
 }
 
 #header > .left {
-	width: 93%;
+	width: 88%;
 }
+
 #header > .right {
-	width: 7%;
+	text-align: right;
+	width: 12%;
 }
+
 #header > .right a {
 	font-size: 1vw;
 }
