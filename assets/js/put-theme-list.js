@@ -4,8 +4,19 @@ var themes = ['black-tie', 'blitzer', 'cupertino', 'dark-hive', 'dot-luv', 'eggp
 			  'overcast', 'pepper-grinder', 'redmond', 'smoothness', 'south-street',
 			  'start', 'sunny', 'swanky-purse', 'trontastic', 'ui-darkness', 'ui-lightness',
 			  'vader'];
-str = "";
+
 for ( i = 0; i < themes.length; i++ ) {
-	str += "<option>"+themes[i]+"</option>";
+	
+	str = "<li>" + themes[i]
+		+	  "<ul>"
+		+	  	"<li><a href='#'>Try</a></li>"
+		+	  	"<li><a href='#'>Save</a></li>"
+		+ 	  "</ul>"
+		+  "</li>";
+
+	theme_no = (i % 3) + 1;
+
+	$('#theme-list'+theme_no).append(str);
+
+	// console.log(i+1);
 }
-$('#themes').html(str);

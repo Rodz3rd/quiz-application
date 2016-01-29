@@ -4,11 +4,16 @@
 	<title>Quiz Application | Admin</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
 
+	<!-- JQuery -->
+	<script type="text/javascript" src="assets/js/jquery-2.2.0.min.js"></script>
 	<!-- JQuery UI plugins -->
 	<link rel="stylesheet" type="text/css" href="jquery-ui-themes-1.11.4/themes/sunny/jquery-ui.min.css" />
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
 
 	<!-- Data Tables plugins -->
 	<link rel="stylesheet" type="text/css" href="DataTables-1.10.10/media/css/dataTables.jqueryui.css">
+	<script type="text/javascript" src="DataTables-1.10.10/media/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="DataTables-1.10.10/media/js/dataTables.jqueryui.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/jquery-custom.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/admin.css" />
@@ -19,10 +24,6 @@
 
 	<div id="header" class="ui-widget ui-widget-content ui-corner-top">
 		<div class="left">
-			<select id="themes"></select>
-			<!-- <button id="save">Save</button> -->
-			<br /><br />
-
 			<img src="assets/img/ako.jpg" style="width: 8%; border-radius: 50%;" />
 			<label>Rodrigo Galura III - <strong>Admin</strong></label>
 		</div>
@@ -34,172 +35,121 @@
 	<div id="content" class="ui-widget ui-widget-content ui-corner-bottom">
 		<div id="tabs">
 			<ul>
-				<li><a href="#tabs1">[Username]</a></li>
-				<li><a href="#tabs2">Tab2</a></li>
-				<li><a href="#tabs3">Tab3</a></li>
-				<li><a href="#tabs4">Tab4</a></li>
-				<li><a href="#tabs5">Tab5</a></li>
+				<li><a href="#users">Users</a></li>
+				<li><a href="#quizzes">Quizzes</a></li>
+				<li><a href="#themes">Change Themes</a></li>
 			</ul>
-			<div id="tabs1">
-				<div class="ui-widget ui-widget-content" style="padding: .5em;">
-					<img src="assets/img/ako.jpg" style="width: 8%; border-radius: 50%;" />
-					<label>Rodrigo Galura III</label>
-				</div> <br />
-
-				<div class="ui-widget ui-widget-content" style="padding: .5em;">
-					<table id="users-score" class="display">
+			<div id="users">
+				<div class="ui-widget ui-widget-content">
+					<table id="user-list" class="display cell-border">
 						<thead>
 							<tr>
-								<th>Score</th>
-								<th>Finish Exam at</th>
-								<th>Details</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Favorite Quote</th>
+								<th>View Score History</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
+								<td><img src="assets/img/ako.jpg" style="width: 50px; border-radius: 25px;" />
+								Rodrigo Sr.</td>
+								<td>Galura</td>
+								<td>Aba matinde</td>
+								<td align="center"><a href="#">View</a></td>
 							</tr>
 							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
+								<td><img src="assets/img/ako.jpg" style="width: 50px; border-radius: 25px;" />
+								Rodrigo Jr.</td>
+								<td>Galura</td>
+								<td>Aba Matinde</td>
+								<td align="center"><a href="#">View</a></td>
 							</tr>
 							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
-							</tr>
-							<tr>
-								<td>10/15</td>
-								<td>10:00 AM</td>
-								<td><a href="#">View more</a></td>
+								<td><img src="assets/img/ako.jpg" style="width: 50px; border-radius: 25px;" />
+								Rodrigo III</td>
+								<td>Galura</td>
+								<td>Aba Matinde</td>
+								<td align="center"><a href="#">View</a></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
-			<div id="tabs2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamficia deserunt mollit anim id est laborum.</p>
+
+			<div id="quizzes">
+				<div class="ui-widget ui-widget-content">
+					<table id="quiz-list" class="display cell-border">
+						<thead>
+							<tr>
+								<th>Questions</th>
+								<th>Choices</th>
+								<th>Correct Answer</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Ano ang ano ?</td>
+								<td>
+									<ol type="A">
+										<li>Hmm ano daw ? hahe</li>
+										<li>Edi wow</li>
+										<li>:p</li>
+										<li>Kapal mo</li>
+									</ol>
+								</td>
+								<td align="center">A</td>
+							</tr>
+							<tr>
+								<td>Ano ang ano ?</td>
+								<td>
+									<ol type="A">
+										<li>Hmm ano daw ? hahe</li>
+										<li>Edi wow</li>
+										<li>:p</li>
+										<li>Kapal mo</li>
+									</ol>
+								</td>
+								<td align="center">A</td>
+							</tr>
+							<tr>
+								<td>Ano ang ano ?</td>
+								<td>
+									<ol type="A">
+										<li>Hmm ano daw ? hahe</li>
+										<li>Edi wow</li>
+										<li>:p</li>
+										<li>Kapal mo</li>
+									</ol>
+								</td>
+								<td align="center">A</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
-			<div id="tabs3">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tere eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div id="tabs4">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incidirure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div id="tabs5">
-				<p>Lorem ipsum dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<div id="themes">
+				<div class="ui-widget ui-widget-content">
+					<ul id="theme-list1"></ul>
+					<ul id="theme-list2"></ul>
+					<ul id="theme-list3"></ul>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<!-- JQuery -->
-<script type="text/javascript" src="assets/js/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
-
-<!-- Data Tables plugins -->
-<script type="text/javascript" src="DataTables-1.10.10/media/js/jquery.dataTables.js"></script>
-<script type="text/javascript" src="DataTables-1.10.10/media/js/dataTables.jqueryui.js"></script>
 
 <!-- put theme list -->
 <script type="text/javascript" src="assets/js/put-theme-list.js"></script>
 
 <script type="text/javascript">
 $( function () {
-$('#tabs').tabs();
+$('#tabs').tabs({active: 2});
 
-$('#users-score').DataTable();
+$('#theme-list1, #theme-list2, #theme-list3').menu();
+
+$('#user-list, #quiz-list').DataTable();
 });
 </script>
 </body>

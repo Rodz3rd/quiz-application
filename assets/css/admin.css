@@ -1,9 +1,5 @@
 @import "style.css";
 
-#save {
-	padding: 0 1em;
-}
-
 #users-score {
 	width: 100%;
 }
@@ -12,4 +8,23 @@
 #users-score > tbody > tr > td {
 	width: 33.33%;
 	text-align: center;
+}
+
+#tabs {
+	height: none;
+}
+
+#tabs > div > div {
+	padding: .5em;
+}
+
+#quiz-list > tbody > tr > td > ol {
+	padding-left: 20px;
+}
+
+#theme-list1,
+#theme-list2,
+#theme-list3 {
+	width: 30%;
+	display: inline-block;
 }
