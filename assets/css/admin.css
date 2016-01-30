@@ -28,3 +28,8 @@
 	width: 30%;
 	display: inline-block;
 }
+
+/*.dataTables_length select,
+.dataTables_filter input {
+	background-color: blue;
+}*/
